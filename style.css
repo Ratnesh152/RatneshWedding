@@ -406,7 +406,7 @@ ul li a.active {
     background-color: salmon;
 }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 600px) {
     ul li a.active {
         background-color: salmon;
     }
@@ -426,405 +426,430 @@ ul li a.active {
     }
 }
 
-    /* End Animation CSS */
+/* End Animation CSS */
 
-    /* AUDIO */
-    .audio-player {
-        --player-button-width: 3em;
-        --sound-button-width: 2em;
-        --space: .5em;
-        width: 15rem;
-        height: 3rem;
+/* AUDIO */
+.audio-player {
+    --player-button-width: 3em;
+    --sound-button-width: 2em;
+    --space: .5em;
+    width: 15rem;
+    height: 3rem;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70%;
+    margin-top: 10px;
+}
+
+.player-button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    width: 40px;
+    margin-right: 5px;
+}
+
+/* AUDIO END */
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 340px) {
+
+    li a svg {
+        width: 17px;
+        height: 17px;
     }
 
-    .controls {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 70%;
-        margin-top: 10px;
+    .bi-house-heart-fill {
+        width: 20px;
+        height: 20px;
     }
 
-    .player-button {
-        background-color: transparent;
-        border: 0;
-        cursor: pointer;
-        padding: 0;
-        width: 40px;
-        margin-right: 5px;
+    li a span {
+        margin-left: -1005px;
+        visibility: hidden;
+        position: absolute;
     }
+}
 
-    /* AUDIO END */
+@media screen and (max-width: 639px) {
 
-    /* RESPONSIVE */
-
-    @media screen and (max-width: 340px) {
-
-        li a svg {
-            width: 17px;
-            height: 17px;
-        }
-
-        .bi-house-heart-fill {
-            width: 20px;
-            height: 20px;
-        }
-
-        li a span {
-            margin-left: -1005px;
-            visibility: hidden;
-            position: absolute;
-        }
-    }
-
-    @media screen and (max-width: 639px) {
-
-        /* h2.title-hero {
+    /* h2.title-hero {
         margin-top: -150px;
     } */
 
-        li {
-            margin-left: 25px;
-        }
-
-        li a span {
-            margin-left: -1005px;
-            visibility: hidden;
-            position: absolute;
-        }
+    li {
+        margin-left: 25px;
     }
 
+    li a span {
+        margin-left: -1005px;
+        visibility: hidden;
+        position: absolute;
+    }
+}
+
+.acara {
+    display: flex;
+}
+
+@media screen and (max-width: 855px) {
     .acara {
-        display: flex;
-    }
-
-    @media screen and (max-width: 855px) {
-        .acara {
-            display: grid;
-        }
-
-        .card2 {
-            margin-top: 20px;
-        }
-    }
-
-    .card1 {
-        width: 400px;
+        display: grid;
     }
 
     .card2 {
-        width: 400px;
+        margin-top: 20px;
+    }
+}
+
+.card1 {
+    width: 400px;
+}
+
+.card2 {
+    width: 400px;
+}
+
+@media screen and (max-width: 418px) {
+    .card1 {
+        width: 300px;
+        height: 230px;
     }
 
-    @media screen and (max-width: 418px) {
-        .card1 {
-            width: 300px;
-            height: 230px;
-        }
+    .card2 {
+        width: 300px;
+        height: 230px;
+    }
+}
 
-        .card2 {
-            width: 300px;
-            height: 230px;
-        }
+@media screen and (max-width: 315px) {
+    .card1 {
+        width: 245px;
+        height: 230px;
     }
 
-    @media screen and (max-width: 315px) {
-        .card1 {
-            width: 245px;
-            height: 230px;
-        }
+    .card2 {
+        width: 245px;
+        height: 230px;
+    }
+}
 
-        .card2 {
-            width: 245px;
-            height: 230px;
-        }
+@media screen and (max-width: 250px) {
+    .card1 {
+        width: 230px;
+        height: 230px;
     }
 
-    @media screen and (max-width: 250px) {
-        .card1 {
-            width: 230px;
-            height: 230px;
-        }
+    .card2 {
+        width: 230px;
+        height: 230px;
+    }
+}
 
-        .card2 {
-            width: 230px;
-            height: 230px;
-        }
+@media screen and (max-width: 375px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 15px;
+    }
+}
+
+@media screen and (max-height: 850px) {
+    section#event {
+        height: 100%;
+    }
+}
+
+@media screen and (max-height: 815px) {
+    section#event {
+        height: 100%;
+    }
+}
+
+@media screen and (max-height: 815px) {
+    section#event {
+        height: 100%;
+    }
+}
+
+@media screen and (max-height: 670px) {
+    section#event {
+        height: 100%;
     }
 
-    @media screen and (max-width: 375px) {
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            grid-gap: 15px;
-        }
+    #letter {
+        padding-bottom: 30%;
+    }
+}
+
+@media screen and (max-height: 670px) {
+    section#event {
+        height: 100%;
+    }
+}
+
+@media screen and (max-height: 555px) {
+    section#event {
+        height: 100%;
+    }
+}
+
+@media screen and (max-height: 445px) {
+    .surah {
+        height: 100%;
+    }
+}
+
+/* wave animate */
+
+.waves1 {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    bottom: 0;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+.waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -50px;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+.parallax>use {
+    -webkit-animation: moveForever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+    animation: moveForever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s;
+    -webkit-animation-duration: 7s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    -webkit-animation-delay: -3s;
+    animation-delay: -3s;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    -webkit-animation-delay: -4s;
+    animation-delay: -4s;
+    -webkit-animation-duration: 13s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    -webkit-animation-delay: -5s;
+    animation-delay: -5s;
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
+}
+
+@-webkit-keyframes moveForever {
+    0% {
+        -webkit-transform: translate3d(-90px, 0, 0);
+        transform: translate3d(-90px, 0, 0);
     }
 
-    @media screen and (max-height: 850px) {
-        section#event {
-            height: 100%;
-        }
+    100% {
+        -webkit-transform: translate3d(85px, 0, 0);
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+@keyframes moveForever {
+    0% {
+        -webkit-transform: translate3d(-90px, 0, 0);
+        transform: translate3d(-90px, 0, 0);
     }
 
-    @media screen and (max-height: 815px) {
-        section#event {
-            height: 100%;
-        }
+    100% {
+        -webkit-transform: translate3d(85px, 0, 0);
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+@media (max-width : 768px) {
+    h1 {
+        font-size: 24px;
     }
 
-    @media screen and (max-height: 815px) {
-        section#event {
-            height: 100%;
-        }
-    }
-
-    @media screen and (max-height: 670px) {
-        section#event {
-            height: 100%;
-        }
-
-        #letter {
-            padding-bottom: 30%;
-        }
-    }
-
-    @media screen and (max-height: 670px) {
-        section#event {
-            height: 100%;
-        }
-    }
-
-    @media screen and (max-height: 555px) {
-        section#event {
-            height: 100%;
-        }
-    }
-
-    @media screen and (max-height: 445px) {
-        .surah {
-            height: 100%;
-        }
-    }
-
-    /* wave animate */
-
-    .waves1 {
-        position: relative;
-        width: 100%;
-        height: 15vh;
-        bottom: 0;
-        min-height: 100px;
-        max-height: 100px;
+    .content {
+        height: 30vh;
     }
 
     .waves {
-        position: relative;
-        width: 100%;
-        height: 15vh;
-        margin-bottom: -50px;
-        min-height: 100px;
-        max-height: 100px;
+        height: 40px;
+        min-height: 40px;
     }
-
-    .parallax>use {
-        -webkit-animation: moveForever 25s cubic-bezier(.55, .5, .45, .5) infinite;
-        animation: moveForever 25s cubic-bezier(.55, .5, .45, .5) infinite;
-    }
-
-    .parallax>use:nth-child(1) {
-        -webkit-animation-delay: -2s;
-        animation-delay: -2s;
-        -webkit-animation-duration: 7s;
-        animation-duration: 7s;
-    }
-
-    .parallax>use:nth-child(2) {
-        -webkit-animation-delay: -3s;
-        animation-delay: -3s;
-        -webkit-animation-duration: 10s;
-        animation-duration: 10s;
-    }
-
-    .parallax>use:nth-child(3) {
-        -webkit-animation-delay: -4s;
-        animation-delay: -4s;
-        -webkit-animation-duration: 13s;
-        animation-duration: 13s;
-    }
-
-    .parallax>use:nth-child(4) {
-        -webkit-animation-delay: -5s;
-        animation-delay: -5s;
-        -webkit-animation-duration: 20s;
-        animation-duration: 20s;
-    }
-
-    @-webkit-keyframes moveForever {
-        0% {
-            -webkit-transform: translate3d(-90px, 0, 0);
-            transform: translate3d(-90px, 0, 0);
-        }
-
-        100% {
-            -webkit-transform: translate3d(85px, 0, 0);
-            transform: translate3d(85px, 0, 0);
-        }
-    }
-
-    @keyframes moveForever {
-        0% {
-            -webkit-transform: translate3d(-90px, 0, 0);
-            transform: translate3d(-90px, 0, 0);
-        }
-
-        100% {
-            -webkit-transform: translate3d(85px, 0, 0);
-            transform: translate3d(85px, 0, 0);
-        }
-    }
-
-    @media (max-width : 768px) {
-        h1 {
-            font-size: 24px;
-        }
-
-        .content {
-            height: 30vh;
-        }
-
-        .waves {
-            height: 40px;
-            min-height: 40px;
-        }
-    }
+}
 
 
 
-    #haldi {
-        color: rgb(255, 183, 0);
-        font-weight: bolder;
-    }
+#haldi {
+    color: rgb(255, 183, 0);
+    font-weight: bolder;
+}
 
-    #BaraatVidai {
-        font-weight: 600;
-    }
+#BaraatVidai {
+    font-weight: 600;
+}
 
-    #reception {
-        font-weight: bolder;
-    }
+#reception {
+    font-weight: bolder;
+}
 
-    #maptext {
-        text-align: center;
-    }
+#maptext {
+    text-align: center;
+}
 
-    .container {
-        display: flex;
-        border: 2px solid #ccc;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-        background: white;
-    }
+.container {
+    display: flex;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: white;
+}
 
-    .left,
-    .right {
-        flex: 1;
-        padding: 20px;
-        text-align: center;
-    }
+.left,
+.right {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
 
-    .left {
-        background: rgba(245, 177, 169, 0.573);
-    }
+.left {
+    background: rgba(245, 177, 169, 0.573);
+}
 
-    .right {
-        background: rgba(245, 177, 169, 0.573);
-    }
+.right {
+    background: rgba(245, 177, 169, 0.573);
+}
 
-    .middle {
-        flex: 0.5;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #e1dfd7cf;
-    }
+.middle {
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e1dfd7cf;
+}
 
-    #heading1 {
-        margin-bottom: 15px;
-        font-size: 24px;
-        color: #db1212;
-    }
+#heading1 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #db1212;
+}
 
-    #heading2 {
-        margin-bottom: 15px;
-        font-size: 24px;
-        color: #db1212;
-    }
+#heading2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #db1212;
+}
 
-    ul {
-        list-style: none;
-        padding: 0;
-    }
+ul {
+    list-style: none;
+    padding: 0;
+}
 
-    ul li {
-        margin: 5px 0;
-        font-size: 18px;
-        color: #333;
-    }
+ul li {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #333;
+}
 
-    img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px;
-    }
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
 
-    #mamu {
-        background-color: #F87171;
-        font-weight: bold;
-        align-content: center;
-        text-align: center;
-    } 
+#mamu {
+    background-color: #F87171;
+    font-weight: bold;
+    align-content: center;
+    text-align: center;
+}
 
-    #myInput {
-        background-image: url('/css/searchicon.png'); /* Add a search icon to input */
-        background-position: 10px 12px; /* Position the search icon */
-        background-repeat: no-repeat; /* Do not repeat the icon image */
-        width: 100%; /* Full-width */
-        font-size: 16px; /* Increase font-size */
-        padding: 12px 20px 12px 40px; /* Add some padding */
-        border: 1px solid #ddd; /* Add a grey border */
-        margin-bottom: 12px; /* Add some space below the input */
-      }
-      
-      #myTable {
-        border-collapse: collapse; /* Collapse borders */
-        width: 100%; /* Full-width */
-        border: 1px solid #ddd; /* Add a grey border */
-        font-size: 18px; /* Increase font-size */
-      }
-      
-      #myTable th, #myTable td {
-        text-align: center; /* Left-align text */
-        padding: 12px; /* Add padding */
-      }
-      
-      #myTable tr {
-        /* Add a bottom border to all table rows */
-        border-bottom: 1px solid #ddd;
-        text-align: center;
-      }
-      
-      #myTable tr.header, #myTable tr:hover {
-        /* Add a grey background color to the table header and on hover */
-        background-color: #f1f1f1;
-      }
-      #formtext{
-        text-align: center;
-        font-size: 20px;
-      }
-      #guestslist{
-        align-content: center;
-        height: 40%;
-      }
-     
-     
+#myInput {
+    background-image: url('/css/searchicon.png');
+    /* Add a search icon to input */
+    background-position: 10px 12px;
+    /* Position the search icon */
+    background-repeat: no-repeat;
+    /* Do not repeat the icon image */
+    width: 100%;
+    /* Full-width */
+    font-size: 16px;
+    /* Increase font-size */
+    padding: 12px 20px 12px 40px;
+    /* Add some padding */
+    border: 1px solid #ddd;
+    /* Add a grey border */
+    margin-bottom: 12px;
+    /* Add some space below the input */
+}
+
+#myTable {
+    border-collapse: collapse;
+    /* Collapse borders */
+    width: 100%;
+    /* Full-width */
+    border: 1px solid #ddd;
+    /* Add a grey border */
+    font-size: 18px;
+    /* Increase font-size */
+}
+
+#myTable th,
+#myTable td {
+    text-align: center;
+    /* Left-align text */
+    padding: 12px;
+    /* Add padding */
+}
+
+#myTable tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+#myTable tr.header,
+#myTable tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #f1f1f1;
+}
+
+#formtext {
+    text-align: center;
+    font-size: 20px;
+}
+
+#guestslist {
+    align-content: center;
+    height: 40%;
+}
+
+#demo {
+    margin-top: 0;
+    padding-top: 10px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
