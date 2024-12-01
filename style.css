@@ -734,11 +734,11 @@ ul li a.active {
 }
 
 .left {
-    background: rgba(245, 177, 169, 0.573);
+    background: rgba(245, 177, 169, 0.325);
 }
 
 .right {
-    background: rgba(245, 177, 169, 0.573);
+    background: rgba(245, 177, 169, 0.325);
 }
 
 .middle {
@@ -746,19 +746,19 @@ ul li a.active {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #e1dfd7cf;
+    background: rgba(245, 177, 169, 0.325);
 }
 
 #heading1 {
     margin-bottom: 15px;
     font-size: 24px;
-    color: #db1212;
+    color: rgb(98, 95, 95);
 }
 
 #heading2 {
     margin-bottom: 15px;
     font-size: 24px;
-    color: #db1212;
+    color: rgb(98, 95, 95);
 }
 
 ul {
