@@ -824,6 +824,7 @@ ul li a.active {
       }
       #guestslist{
         align-content: center;
+        height: 40%;
       }
       #demo{
         font-size: larger;
