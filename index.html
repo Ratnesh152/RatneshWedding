@@ -513,7 +513,20 @@
             </button>
         </div>
     </div>
-
+    <div class="chat-bot fixed bottom-[70px] right-[20px] w-[300px] h-[400px] bg-white shadow-lg rounded-lg overflow-hidden" id="chatBot" style="display: none;">
+        <iframe src="https://copilotstudio.microsoft.com/environments/Default-0f5b78ae-6bd4-45a1-9a39-a34c7d156d9c/bots/Default_agentRk/webchat?__version__=2" frameborder="0" style="width: 100%; height: 100%;"></iframe>
+    </div>
+    <button onclick="toggleChatBot()" class="fixed bottom-[140px] right-[20px] bg-blue-500 text-white rounded-full w-12 h-12 flex items-center justify-center">Chat</button>
+    <script>
+        function toggleChatBot() {
+            var chatBot = document.getElementById('chatBot');
+            if (chatBot.style.display === 'none') {
+                chatBot.style.display = 'block';
+            } else {
+                chatBot.style.display = 'none';
+            }
+        }
+    </script>
     <script src="query/query-3.6.1.min.js"></script>
     <script src="script.js"></script>
 </body>
