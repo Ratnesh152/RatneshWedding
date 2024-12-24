@@ -513,20 +513,36 @@
             </button>
         </div>
     </div>
+  
+    <!-- Chatbot Container -->
     <div class="chat-bot fixed bottom-[70px] right-[20px] w-[300px] h-[400px] bg-white shadow-lg rounded-lg overflow-hidden" id="chatBot" style="display: none;">
-        <iframe src="https://copilotstudio.microsoft.com/environments/Default-0f5b78ae-6bd4-45a1-9a39-a34c7d156d9c/bots/Default_agentRk/webchat?__version__=2" frameborder="0" style="width: 100%; height: 100%;"></iframe>
+        <iframe src="https://copilotstudio.microsoft.com/environments/Default-0f5b78ae-6bd4-45a1-9a39-a34c7d156d9c/bots/Default_agentRk/webchat?__version__=2"
+            frameborder="0" style="width: 100%; height: 100%;"></iframe>
     </div>
-    <button onclick="toggleChatBot()" class="fixed bottom-[140px] right-[20px] bg-blue-500 text-white rounded-full w-12 h-12 flex items-center justify-center">Chat</button>
+
+    <!-- Chatbot Toggle Button -->
+    <button id="chatToggle" class="fixed bottom-[140px] right-[20px] bg-blue-500 text-white rounded-full w-12 h-12 flex items-center justify-center">
+        Chat
+    </button>
+
+    <!-- Enhanced JavaScript for Chatbot Toggle -->
     <script>
-        function toggleChatBot() {
-            var chatBot = document.getElementById('chatBot');
+        // Improved toggle function with animation
+        const chatBot = document.getElementById('chatBot');
+        const chatToggle = document.getElementById('chatToggle');
+
+        chatToggle.addEventListener('click', () => {
             if (chatBot.style.display === 'none') {
                 chatBot.style.display = 'block';
+                chatToggle.innerText = 'Close'; // Change button text when open
             } else {
                 chatBot.style.display = 'none';
+                chatToggle.innerText = 'Chat'; // Revert button text when closed
             }
-        }
+        });
     </script>
+
+   
     <script src="query/query-3.6.1.min.js"></script>
     <script src="script.js"></script>
 </body>
