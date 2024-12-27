@@ -791,11 +791,37 @@ img {
     margin-top: 0;
     padding-top: 10px;
     font-size: 18px;
-    color: white;
+    color: rgb(101, 238, 238);
     text-align: center;
     font-weight: bold;
+    
 }
 #note{
     font-size: 8px;
     text-align: center;
+}
+#date{
+    padding-top: 20px;
+}
+@keyframes blinking {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.blink {
+    animation: blinking 3s infinite;
+}
+.blink2 {
+    animation: blinking 1s infinite;
+}
+.blinkhand {
+    animation: blinking 2s infinite;
+}
+.blink2:hover {
+    animation: blinking  ;
+}
+
+#homeDate{
+    color: rgb(82, 68, 68);
 }

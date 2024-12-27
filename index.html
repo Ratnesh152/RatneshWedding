@@ -37,18 +37,19 @@
 
 <body class="bg-red-50 overflow-x-hidden" style="font-family: 'Open Sans', sans-serif;">
 
+    <!-- Landing Card -->
     <div id="cover" style="background:url(img/bg/wedding1.png) center center no-repeat; background-size: cover;"
         class="kosong z-30 fixed top-0 bottom-0 left-0 right-0 w-full h-screen py-28 px-2">
         <div class="hero mt-[-30px]"><strong>
-                <p id="demo"></p>
+                <p id="demo" class="blink"></p>
                 <img src="img/element/flower.png" alt="" class="m-auto w-[100px] sm:w-[150px]">
                 <h4 class="text-white text-center font-bold text-[16px] sm:text-[25px]">Hello You're Invited</h4>
                 <h1 class="text-white align-center text-center font-regular text-[60px] sm:text-[80px] md:text-[100px]"
                     style="font-family: 'Passions Conflict', cursive;">Ratu.. & Shaku..</span></h1>
                 <hr class="m-auto border-[2px] border-[#fff] w-[16%]">
-                <h1 class="text-center text-white font-bolder pt-16 sm:text-[35px]">03 Feburary 2025</h1>
+                <h1 id="date" class="text-center text-white font-bolder pt-16 sm:text-[35px] ">03 Feburary 2025</h1>
                 <button
-                    class="btn-open block m-auto py-2 w-[250px] mt-4 text-center text-white bg-red-600 rounded-lg cursor-pointer"
+                    class="btn-open block m-auto py-2 w-[250px] mt-4 text-center text-white bg-red-600 rounded-lg cursor-pointer animate-[pulse_0.5s_ease-in-out_infinite]"
                     id="open"> Open Invitation </button>
             </strong>
         </div>
@@ -114,7 +115,7 @@
     </nav>
 
     <!-- HOME -->
-    <section id="home" style="background:url(img/bg/wedding1.png) center center no-repeat; background-size: cover;"
+    <section id="home" style="background:url(img/bg/wedding2.png) center center no-repeat; background-size: cover;"
         class="w-full h-[100%] pt-44 sm:pt-28">
         <div class="hero">
             <img src="img/element/flower.png" alt="" class="m-auto w-[100px] sm:w-[150px]">
@@ -122,7 +123,7 @@
             <h1 class="text-white align-center text-center font-regular text-[60px] sm:text-[80px] md:text-[100px]"
                 style="font-family: 'Passions Conflict', cursive;">Ratnesh & Shakuntala</span></h1>
             <hr class="m-auto border-[2px] border-[#fff] w-[16%]">
-            <p class="text-center text-white font-semibold pt-10 sm:text-[25px]">03 Feburary 2025</p>
+            <p id="homeDate" class="text-center text-white font-semibold pt-5 sm:text-[25px]">03 Feburary 2025</p>
         </div>
         <svg class="waves1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -150,7 +151,7 @@
 
             <div class="opening w-[80%] m-auto">
                 <b>
-                    <p class="salam italic text-gray-800 text-center text-[16px]">ॐ श्री गणेशाय नमः</p>
+                    <p class="salam italic text-gray-800 text-center text-[16px]">|| ॐ श्री गणेशाय नमः ||</p>
                     <br>
                     <p class="mt-[10px] text-gray-800 text-center text-[15px]">वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ ।<br>
                         निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा ॥</p>
@@ -163,28 +164,38 @@
                     <img src="img/profile/male.png" alt="" class="w-[170px] rounded-full border-[4px] border-red-200">
                     <h3 class="mt-[20px] mb-[20px] text-gray-600 text-[70px] text-center"
                         style="font-family: 'Passions Conflict', cursive;">Ratnesh</h3>
-                    <p class="text-center font-bold text-lg text-stone-800">Ratnesh Chaudhary</p>
-                    <p class="text-center text-sm text-gray-800">Son of
+                    <p
+                        class="text-center font-bold text-lg text-stone-800 hover:text-red-600 transition-colors duration-300">
+                        Ratnesh Chaudhary</p>
+                    <p class="text-center text-sm text-gray-800 italic">Son of
                         <br>
-                        <b>Shri Ram Lagan Chaudhary </b>
+                        <b class="font-serif">Shri Ram Lagan Chaudhary</b>
                     </p>
-                    <p class="text-center text-sm text-gray-800">&</p>
+                    <p class="text-center text-sm text-gray-800 font-light">&</p>
 
-                    <p class="text-center text-sm text-gray-800"><b>Smt. Kaushilya Devi</b><br>Village- Sandi Kala<br>Post-
-                        Rudra Nagar<br> District- Siddharth Nagar</p>                    
+                    <p class="text-center text-sm text-gray-800"><b class="font-serif">Smt. Kaushilya Devi</b>
+                        <br><span class="font-light tracking-wide">Village- Sandi Kala</span>
+                        <br><span class="font-light tracking-wide">Post- Rudra Nagar</span>
+                        <br><span class="font-light tracking-wide">District- Siddharth Nagar</span>
                     </p>
                 </div>
                 <div class="profile2 m-auto hidden sm:block">
                     <img src="img/profile/female.png" alt="" class="w-[170px] rounded-full border-[4px] border-red-200">
                     <h2 class="mt-[20px] mb-[20px] text-gray-600 text-[70px] text-center"
                         style="font-family: 'Passions Conflict', cursive;">Shakuntala</h2>
-                    <p class="text-center font-bold text-lg text-stone-800">Shakuntala Chaudhary</p>
-                    <p class="text-center text-sm text-gray-800">Daughter of
+                    <p
+                        class="text-center font-bold text-lg text-stone-800 hover:text-red-600 transition-colors duration-300">
+                        Shakuntala Chaudhary</p>
+                    <p class="text-center text-sm text-gray-800 italic">Daughter of
                         <br>
-                        <b>Late Shri Vasdev Chaudhary</b>
+                        <b class="font-serif">Late Shri Vasdev Chaudhary</b>
                     </p>
-                    <p class="text-center text-sm text-gray-800">&</p>
-                    <p class="text-center text-sm text-gray-800"><b>Smt. Amirata Devi</b></p>
+                    <p class="text-center text-sm text-gray-800 font-light">&</p>
+                    <p class="text-center text-sm text-gray-800"><b class="font-serif">Smt. Amirata Devi</b>
+                        <br><span class="font-light tracking-wide">Village-Pipra Chithar</span>
+                        <br><span class="font-light tracking-wide">Post- Bhawanipur</span>
+                        <br><span class="font-light tracking-wide">District- Basti</span>
+                    </p>
                 </div>
             </div>
 
@@ -198,13 +209,19 @@
                         class="w-[80%] m-auto rounded-full border-[4px] border-red-200">
                     <h2 class="mt-[10px] mb-[10px] text-gray-600 text-[70px] text-center"
                         style="font-family: 'Passions Conflict', cursive;">Ratnesh</h2>
-                    <p class="text-center font-bold text-lg text-stone-800">Ratnesh Chaudhary</p>
-                    <p class="text-center text-sm text-gray-800">Son of
+                    <p
+                        class="text-center font-bold text-lg text-stone-800 hover:text-red-600 transition-colors duration-300">
+                        Ratnesh Chaudhary</p>
+                    <p class="text-center text-sm text-gray-800 italic">Son of
                         <br>
-                        <b>Shri Ram Lagan Chaudhary</b>
+                        <b class="font-serif">Shri Ram Lagan Chaudhary</b>
                     </p>
-                    <p class="text-center text-sm text-gray-800">&</p>
-                    <p class="text-center text-sm text-gray-800"><b>Smt. Kaushilya Devi</b></p>
+                    <p class="text-center text-sm text-gray-800 font-light">&</p>
+                    <p class="text-center text-sm text-gray-800"><b class="font-serif">Smt. Kaushilya Devi</b>
+                        <br><span class="font-light tracking-wide">Village- Sandi Kala</span>
+                        <br><span class="font-light tracking-wide">Post- Rudra Nagar</span>
+                        <br><span class="font-light tracking-wide">District- Siddharth Nagar</span>
+                    </p>
                 </div>
 
                 <div
@@ -216,13 +233,19 @@
                         class="w-[80%] m-auto rounded-full border-[4px] border-red-200">
                     <h2 class="mt-[10px] mb-[10px] text-gray-600 text-[70px] text-center"
                         style="font-family: 'Passions Conflict', cursive;">Shakuntala</h2>
-                    <p class="text-center font-bold text-lg text-stone-800">Shakuntala Chaudhary</p>
-                    <p class="text-center text-sm text-gray-800">Daughter of
+                    <p
+                        class="text-center font-bold text-lg text-stone-800 hover:text-red-600 transition-colors duration-300">
+                        Shakuntala Chaudhary</p>
+                    <p class="text-center text-sm text-gray-800 italic">Daughter of
                         <br>
-                        <b>Late Shri Vasdev Chaudhary</b>
+                        <b class="font-serif">Late Shri Vasdev Chaudhary</b>
                     </p>
-                    <p class="text-center text-sm text-gray-800">&</p>
-                    <p class="text-center text-sm text-gray-800"><b>Smt. Amrita Devi</b></p>
+                    <p class="text-center text-sm text-gray-800 font-light">&</p>
+                    <p class="text-center text-sm text-gray-800"><b class="font-serif">Smt. Amrita Devi</b>
+                        <br><span class="font-light tracking-wide">Village-Pipra Chithar</span>
+                        <br><span class="font-light tracking-wide">Post- Bhawanipur</span>
+                        <br><span class="font-light tracking-wide">District- Basti</span>
+                    </p>
                 </div>
             </div>
         </div>
@@ -251,9 +274,10 @@
                     <h4 class="tgl m-auto mt-4"><b class="m-auto flex justify-center text-[35px]">02</b>
                         <p class="text-slate-800 ">Sunday</p>
                     </h4>
-                    </div>
+                </div>
                 <p class="text-slate-800 text-center italic mt-5">Start from 11:00 AM <br><a
-                        href="https://maps.app.goo.gl/jDfiXuuh8FVwVHLz6" target="_blank">At - <b><u>Sandi Kala <br>Post- Rudra Nagar, District- Siddharth Nagar</u></b></a></p>
+                        href="https://maps.app.goo.gl/jDfiXuuh8FVwVHLz6" target="_blank">At - <b><u>Sandi Kala <br>Post-
+                                Rudra Nagar, District- Siddharth Nagar</u></b></a></p>
             </div>
             <div class="card2 bg-red-50 h-[360px] rounded-lg shadow-lg">
                 <h2 id="BaraatVidai" class="text-[50px] text-center mt-5"
@@ -267,8 +291,11 @@
                         <p class="text-slate-800 ">Monday</p>
                     </h4>
                 </div>
-                <p class="text-slate-800 text-center italic mt-5">Baraat Departure <a href="https://maps.app.goo.gl/jDfiXuuh8FVwVHLz6" target="_blank">From - <b><u>Sandi Kala <br>Post- Rudra Nagar, District- Siddharth Nagar</u></b></a><br> at 06:00 PM
-                    <a href="https://maps.app.goo.gl/KrjMndWwimZTqKrf8" target="_blank">To - <b><u>Pipra Chithar<br> Post- Bhawanipur, District- Basti</u></b></a>
+                <p class="text-slate-800 text-center italic mt-5">Baraat Departure <a
+                        href="https://maps.app.goo.gl/jDfiXuuh8FVwVHLz6" target="_blank">From - <b><u>Sandi Kala
+                                <br>Post- Rudra Nagar, District- Siddharth Nagar</u></b></a><br> at 06:00 PM
+                    <a href="https://maps.app.goo.gl/KrjMndWwimZTqKrf8" target="_blank">To - <b><u>Pipra Chithar<br>
+                                Post- Bhawanipur, District- Basti</u></b></a>
                 </p>
             </div>
             <div class="card2 bg-red-50 h-[360px] rounded-lg shadow-lg">
@@ -282,9 +309,10 @@
                     <h4 class="tgl m-auto mt-4"><b class="m-auto flex justify-center text-[35px]">05</b>
                         <p class="text-slate-800 ">Wednesday</p>
                     </h4>
-                    </div>
+                </div>
                 <p class="text-slate-800 text-center italic mt-5">Start from 6:00 PM<br><a
-                        href="https://maps.app.goo.gl/jDfiXuuh8FVwVHLz6" target="_blank">At - <b><u>Kala <br>Post- Rudra Nagar, District- Siddharth Nagar</u></b></a></p>
+                        href="https://maps.app.goo.gl/jDfiXuuh8FVwVHLz6" target="_blank">At - <b><u>Kala <br>Post- Rudra
+                                Nagar, District- Siddharth Nagar</u></b></a></p>
             </div>
         </div>
 
@@ -306,7 +334,7 @@
     <section id="pawan">
         <div class="h-[100%] pt-10"
             style="background-image: url(img/bg/wedding1.jpg); background-attachment: fixed; background-size: cover; background-repeat: no-repeat; background-position: 0 -100px;">
-            <div class="m-auto w-[95%] align-center bg-white/[.7] rounded-[5px] p-2 z-10">
+            <div class="m-auto w-[95%] align-center bg-white/[.2] rounded-[5px] p-2 z-10">
                 <h2 class="font-semibold text-center text-[24px] text-slate-900">पावन परिणयोत्सव</h2>
                 <p id="para1" class="text-center text-gray-900 text-[15px] p-6">"बस इतना सा आग्रह है आपसे
                     की मधुर वेला में हमने स्नेह की थाल में आपके लिए चन्दन सा आदर, पुष्प सा प्रेम,
@@ -350,7 +378,7 @@
 
                 <!-- Middle Div -->
                 <div class="middle">
-                    <img src="img/element/hand.png" alt="Beautiful Decorative PNG" />
+                    <img src="img/element/hand.png" alt="Beautiful Decorative PNG" class="blinkhand"/>
                 </div>
 
                 <!-- Right Div -->
@@ -386,7 +414,7 @@
             </g>
         </svg>
         <div id="mamu" class="h-[100%] pt-10 mamu"
-            style="background-image: url(img/bg/wedding1.png); background-attachment: fixed; background-size: cover; background-repeat: no-repeat; background-position: 0 -100px; ">
+            style="background-image: url(img/bg/wedding3.webp); background-attachment: fixed; background-size: cover; background-repeat: no-repeat; background-position: 0 -100px; ">
 
             <div class="m-auto w-[95%] align-center bg-white/[.7] rounded-[5px] p-2 z-10">
                 <h2 class="font-semibold text-center text-[24px] text-slate-900">बाल मनुहार</h2>
@@ -403,17 +431,17 @@
         <div class="map w-[100%]"><br>
             <h2 class="font-semibold text-center text-[24px] text-slate-900">Reach to Venue.....</h2>
             <p id="maptxt" class="text-center text-gray-900">
-                Click <a href="https://goo.gl/maps/MDn9YGpyZoj3CBN28"><b><u>Open Google Map</u></b></a> to get
+                Click <a href="https://goo.gl/maps/MDn9YGpyZoj3CBN28"><b><u class="blink2">Open Google Map</u></b></a> to get
                 direction to Reach the destination.
             </p>
             <div class="maps">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d735.9364969979293!2d82.8222187!3d27.041360800000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1732885110358!5m2!1sen!2sin"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" class="mt-[120px] h-[300px] w-[100%]"></iframe>
+                    referrerpolicy="no-referrer-when-downgrade" class="mt-[20px] h-[300px] w-[100%]"></iframe>
 
             </div>
-            <div class="btn-map m-auto">
+            <div class="btn-map m-auto blink2">
                 <a href="https://goo.gl/maps/MDn9YGpyZoj3CBN28" target="_blank"
                     class="btn-map text-white m-auto py-2 w-[200px] mt-[40px] flex items-center justify-center rounded-lg bg-[#ff7070] hover:bg-slate-600">Open
                     Google Maps</a>
@@ -424,23 +452,24 @@
 
     <!-- GUESTBOOK -->
     <section id="guestbook" class="m-auto h-[000px]">
-        <img src="img/element/flower2.png" alt="" class="sm:w-[300px] w-[80%] pt-[50px] flower5 m-auto"> 
-            <h1 class="title5 text-[00px] text-center mt-[-5px]" style="font-family: 'Passions Conflict', cursive;">
-                Guest Book</h1>
-    </section> 
+        <img src="img/element/flower2.png" alt="" class="sm:w-[300px] w-[80%] pt-[50px] flower5 m-auto">
+        <h1 class="title5 text-[00px] text-center mt-[-5px]" style="font-family: 'Passions Conflict', cursive;">
+            Guest Book</h1>
+    </section>
 
     <!-- GALLERY -->
     <section id="gallery">
         <div class="photo h-[100%]">
             <img src="img/element/flower2.png" alt="" class="sm:w-[300px] w-[80%] pt-[50px] flower3 m-auto">
-            <h1 class="title3 text-[50px] text-center mt-[-5px]" style="font-family: 'Passions Conflict', cursive;">Our Gallery</h1>
+            <h1 class="title3 text-[50px] text-center mt-[-5px]" style="font-family: 'Passions Conflict', cursive;">Our
+                Gallery</h1>
             <div class="z-50 full-img w-[100%] h-[100vh] fixed top-0 left-0 items-center justify-center"
-                style="background-color: rgba(255, 255, 255, 0.6); display: none;" id="fullImgBox">
-                <img src="img/gallery/img1.jpg" alt="" class="w-[90%] max-w-[500px]" id="fullImg">
-                <span class="absolute top-[25%] ml-[85%] text-[30px] cursor-pointer" onclick="closeFullImg()">X</span>
+                style="background-color: rgba(233, 226, 141, 0.6); display: none;" id="fullImgBox">
+                <img src="img/gallery/img1.jpg" alt="" class="w-[100%] max-w-[750px]" id="fullImg">
+                <span class="absolute top-[10%] ml-[75%] text-[30px] cursor-pointer" onclick="closeFullImg()">X</span>
             </div>
 
-            <div class="gallery w-[80%] mt-[100px] m-auto mb-[50px] mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-[13px]">
+            <div class="gallery w-[80%] mt-[30px] m-auto mb-[30px] mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-[13px]">
                 <img src="img/gallery/img1.jpg" alt="" class="w-[100%] rounded-[5px] cursor-pointer h-[300px] block"
                     onclick="openFullImg(this.src)" id="img1">
                 <img src="img/gallery/img2.jpg" alt="" class="w-[100%] rounded-[5px] cursor-pointer h-[300px] block"
@@ -513,15 +542,18 @@
             </button>
         </div>
     </div>
-  
+
     <!-- Chatbot Container -->
-    <div class="chat-bot fixed bottom-[70px] right-[20px] w-[300px] h-[400px] bg-white shadow-lg rounded-lg overflow-hidden" id="chatBot" style="display: none;">
-        <iframe src="https://copilotstudio.microsoft.com/environments/Default-0f5b78ae-6bd4-45a1-9a39-a34c7d156d9c/bots/Default_agentRk/webchat?__version__=2"
+    <div class="chat-bot fixed bottom-[70px] right-[20px] w-[300px] h-[400px] bg-white shadow-lg rounded-lg overflow-hidden"
+        id="chatBot" style="display: none;">
+        <iframe
+            src="https://copilotstudio.microsoft.com/environments/Default-0f5b78ae-6bd4-45a1-9a39-a34c7d156d9c/bots/Default_agentRk/webchat?__version__=2"
             frameborder="0" style="width: 100%; height: 100%;"></iframe>
     </div>
 
     <!-- WhatsApp Chat Button -->
-    <a href="https://wa.me/6388683829" target="_blank" class="fixed bottom-[140px] right-[20px] bg-green-500 text-white rounded-full w-12 h-12 flex items-center justify-center">
+    <a href="https://wa.me/6388683829" target="_blank"
+        class="fixed bottom-[140px] right-[20px] bg-green-500 text-white rounded-full w-12 h-12 flex items-center justify-center">
         <i class="bi bi-whatsapp"></i>
     </a>
 
@@ -542,7 +574,7 @@
         });
     </script>
 
-   
+
     <script src="query/query-3.6.1.min.js"></script>
     <script src="script.js"></script>
 </body>
