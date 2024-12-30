@@ -710,6 +710,7 @@ ul li a.active {
 }
 
 #reception {
+    color: rgb(121, 148, 235);
     font-weight: bolder;
 }
 
@@ -809,11 +810,11 @@ img {
     100% { opacity: 1; }
 }
 
-.blink {
-    animation: blinking 3s infinite;
+.blink ::content{
+    animation: blinking  ;
 }
 .blink2 {
-    animation: blinking 1s infinite;
+    animation: blinking 5s infinite;
 }
 .blinkhand {
     animation: blinking 2s infinite;
