@@ -372,14 +372,11 @@
             <div class="container">
                 <!-- Left Div -->
                 <div class="left">
-                    <h2 id="heading1"><b>दर्शनाभिलाषी</b></h2>
+                    <h2 id="heading2"><b>स्वागताकांक्षी</b></h2>
                     <ul>
-                        <li>श्री राम लगन चौधरी(9838393443)</li>
-                        <li>श्री प्रेमचंद चौधरी</li>
-                        <li>श्री राम भजन चौधरी</li>
-                        <li>श्री अरविन्द चौधरी</li>
-                        <li>श्री रजनीश चौधरी</li>
-                        <li>और अन्य परिवार तथा मित्रगण |</li>
+                        <li>राम भजन, राम कलेश, राम आशीष, राम अखिलेश</li>
+                        <li>अनिल, रंजीत(8303290587), रवि(9580156837)</li>
+                        <li>और अन्य चौधरी परिवार तथा मित्रगण |</li>
                     </ul>
                 </div>
 
@@ -390,16 +387,10 @@
 
                 <!-- Right Div -->
                 <div class="right">
-                    <h2 id="heading2"><b>स्वागताकांक्षी</b></h2>
+                    <h2 id="heading1"><b>दर्शनाभिलाषी</b></h2>
                     <ul>
-                        <li>श्री राम प्रीत चौधरी</li>
-                        <li>श्री राम कलेश चौधरी</li>
-                        <li>श्री राम आशीष चौधरी</li>
-                        <li>राम अखिलेश चौधरी</li>
-                        <li>अनिल चौधरी</li>
-                        <li>रंजीत चौधरी(8303290587)</li>
-                        <li>रवि चौधरी(9580156837)</li>
-                        <li>और अन्य चौधरी परिवार तथा मित्रगण |</li>
+                        <li><b>श्री राम लगन चौधरी</b>(9838393443)</li>
+                        <li><h6> (सेवानिवृत्त राजस्व निरीक्षक)<h6></li>
                     </ul>
                 </div>
             </div>
@@ -539,7 +530,7 @@
     </footer>
 
     <div class="audio-player fixed bottom-[70px] sm:bottom-[90px] right-[-160px] sm:right-[-150px] z-20">
-        <audio autoplay loop src="mp3/ShankhnaadAndOm.mp3"></audio>
+        <audio src="mp3/ShankhnaadAndOm.mp3"></audio>
         <div class="controls m-auto">
             <button class="player-button">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
@@ -550,6 +541,49 @@
             </button>
         </div>
     </div>
+    <!-- <div class="audio-player fixed bottom-[70px] sm:bottom-[90px] right-[-60px] sm:right-[-50px] z-20">
+        <audio id="audioPlayer" autoplay loop></audio>
+        <div class="controls m-auto">
+            <button class="player-button" onclick="toggleAudio()"></button>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
+                    <path fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z"
+                        clip-rule="evenodd" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        const audioPlayer = document.getElementById('audioPlayer');
+        const currentDate = new Date();
+        const currentDay = currentDate.getDate();
+        const currentMonth = currentDate.getMonth()+1;
+
+        if (currentDay === 2) {
+            if (currentMonth===2){
+                audioPlayer.src = 'mp3/HaldiSong.mp3';
+            } 
+        } else if (currentDay === 3) {
+            if (currentMonth===2){
+            audioPlayer.src = 'mp3/BaraatSong.mp3';
+            }
+        } else if (currentDay === 5) {
+            if (currentMonth===2){
+            audioPlayer.src = 'mp3/ReceptionSong.mp3';
+            }
+        } else {
+            audioPlayer.src = 'mp3/ShankhnaadAndOm.mp3';
+        }
+
+        function toggleAudio() {
+            if (audioPlayer.paused) {
+                audioPlayer.play();
+            } else {
+                audioPlayer.pause();
+            }
+        }
+    </script> -->
 
     <!-- Chatbot Container -->
     <div class="chat-bot fixed bottom-[70px] right-[20px] w-[300px] h-[400px] bg-white shadow-lg rounded-lg overflow-hidden"

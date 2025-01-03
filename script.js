@@ -287,7 +287,7 @@ function myFunction() {
 }
 
 
-var countDownDate = new Date("Feb 03, 2025 10:00:00").getTime();
+var countDownDate = new Date("Feb 03, 2025 11:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
@@ -318,18 +318,27 @@ var x = setInterval(function () {
 
 
 let today=new Date().getDate();
+let month=new Date().getMonth()+1;
+let year = new Date().getFullYear();
+let eventDate = new Date(year, 1, 2); // Month is 0-indexed, so 1 represents February
 
-if (today===2) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "<span style='color: gold;'>Hello Guests, Today is Haldi</span>";
+if (today===2)  {
+    if (month===2) {        
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "<span style='color: gold;'>Hello Guests, Today is Haldi</span>";
+    }
 }
 
 if (today===3) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "<span style='color: red;'>Hello Guests, Today is Wedding</span>";
+    if (month===2) {  
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "<span style='color: red;'>Hello Guests, Today is Wedding</span>";
+    }
 }
 
 if (today===5) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "<span style='color: green;'>Hello Guests, Today is Reception</span>";
+    if (month===2) {   
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "<span style='color: green;'>Hello Guests, Today is Reception</span>";
+    }
 }
